@@ -16,25 +16,14 @@ Error checking for text strings or other invalid inputs is not required, only va
 */
 
 function narcissistic(value) {
-    let arr = []
+    let arr = []                //empty
     let strNum =value.toString()    
     for(let i = 0 ; i < strNum.length; i++){
        arr.push(parseInt(strNum[i]))
     }
-    // console.log(arr)
-    // console.log(strNum)
-
-    for( nums of arr){
-        Math.pow(nums,3)
-    }
-//   let newArr = arr.map( el=>{ 
-//     console.log(el)
-//     console.log(strNum.length) 
-
-//     Math.pow(el,value.length)
-// })
-
-    console.log(arr)
+    let newArr = arr.map( el =>  Math.pow(el,strNum.length))
+    let result = newArr.reduce((sum, el) => sum + el )
+    return result === value
 
    }
    
