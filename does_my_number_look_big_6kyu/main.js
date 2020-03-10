@@ -19,17 +19,22 @@ function narcissistic(value) {
     let arr = []
     let strNum =value.toString()    
     for(let i = 0 ; i < strNum.length; i++){
-       arr.push(parseInt(strNum.charAt(i)))
+       arr.push(parseInt(strNum[i]))
     }
+    // console.log(arr)
+    // console.log(strNum)
 
-  let newArr = arr.map( el=>{ 
-    console.log(el)
-    console.log(strNum.length) 
+    for( nums of arr){
+        Math.pow(nums,3)
+    }
+//   let newArr = arr.map( el=>{ 
+//     console.log(el)
+//     console.log(strNum.length) 
 
-    Math.pow(el,strNum.length)
-})
+//     Math.pow(el,value.length)
+// })
 
-    console.log(newArr)
+    console.log(arr)
 
    }
    
