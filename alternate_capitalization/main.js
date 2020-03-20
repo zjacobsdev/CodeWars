@@ -19,33 +19,26 @@ Even-odd disparity
 
 
 function capitalize(s){
-    let arr1 = []
-    //let arr2 = []
-   // let result
+    let arr1 = []  // array for starting char is upper
+    let arr2 = [] // array for starting char
 
-   for(let i= 1; i <= s.length ;i++){
-    if (i%2 === 0){
-        arr2.push( s.charAt(i-1).toLowerCase())
-    }else{
-        arr2.push( s.charAt(i-1).toUpperCase())
-  
-   // console.log(arr2)
-}
+   for(let i= 1; i <= s.length ;i++){ // iterate over the string lenght
+        if (i%2 === 0){               // if the remaider of i/2 is 0, it even, change that char at index i to lowercase, else change to Uppercase
+            arr2.push( s.charAt(i-1).toLowerCase())
+        }else{
+                arr2.push( s.charAt(i-1).toUpperCase())
+        }
+    }
 
-    for(let i= 1; i <= s.length ;i++){
+    for(let i= 1; i <= s.length ;i++){  // the reverse of above
         if (i%2 === 0){
             arr1.push( s.charAt(i-1).toUpperCase())
         }else{
             arr1.push( s.charAt(i-1).toLowerCase())
-      
-       // console.log(arr2)
+        }
+    return[arr2.join(""), arr1.join("")]
+
     }
-   // console.log(arr1)
-//   return [];
-}
-console.log(arr1)
-console.log(arr2)
-}
 }
 
 
