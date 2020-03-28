@@ -16,14 +16,14 @@ Error checking for text strings or other invalid inputs is not required, only va
 */
 
 function narcissistic(value) {
-    let arr = []                //empty
-    let strNum =value.toString()    
-    for(let i = 0 ; i < strNum.length; i++){
-       arr.push(parseInt(strNum[i]))
+    let arr = []                //empty array
+    let strNum =value.toString()    // turn number to string
+    for(let i = 0 ; i < strNum.length; i++){   // add the string charater in to an arry and convert it bak to a number
+       arr.push(parseInt(strNum[i]))            
     }
-    let newArr = arr.map( el =>  Math.pow(el,strNum.length))
-    let result = newArr.reduce((sum, el) => sum + el )
-    return result === value
+    let newArr = arr.map( el =>  Math.pow(el,strNum.length))  // create an new array of each element being raise to the power of strigh length
+    let result = newArr.reduce((sum, el) => sum + el )    // sum up the elemnts in the array.
+    return result === value   // return true if the result matches the value
 
    }
    

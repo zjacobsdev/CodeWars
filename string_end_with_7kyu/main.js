@@ -12,7 +12,6 @@ function solution(str, ending){
 
    result = str.endsWith(ending)
 
-    // TODO: complete
   }
 
 
