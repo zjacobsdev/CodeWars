@@ -1,4 +1,6 @@
 /*
+WHITEBOARDED: 4/1/2020
+
 There is a house with 4 levels. In that house there is an elevator. You can program this elevator to go up or down, depending on what button the user touches inside the elevator.
 
 Valid levels must be only these numbers: 0,1,2,3
