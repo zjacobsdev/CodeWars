@@ -12,8 +12,12 @@ For 4 or more names, the number in and 2 others simply increases.
 */
 
 function likes(names) {
-  // TODO
+  // for loop with counting the index of likes 
+  //if likes is more than 2 then print a string that count how many like after the first 3 people.
 }
+
+
+// other notes: make it as effective as possiable with hundred likes or more..
 
 likes([])//, 'no one likes this');
 likes(['Peter'])//, 'Peter likes this');
