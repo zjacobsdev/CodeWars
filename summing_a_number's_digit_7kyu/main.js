@@ -17,9 +17,7 @@ function sumDigits(number) {
 
   let sum  = numArr.reduce((current, num , i ) => {
      if (isNaN(i)){
-
        console.log(i)
-
       numArr.splice(i,1)
 
      }
