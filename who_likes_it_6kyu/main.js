@@ -13,7 +13,20 @@ For 4 or more names, the number in and 2 others simply increases.
 
 function likes(names) {
   // for loop with counting the index of likes 
-  //if likes is more than 2 then print a string that count how many like after the first 3 people.
+  //if likes is more than 2 then print a string that count how many like after the first 3 people. 
+  if (names.length >= 4){
+
+  var moreLikes = names.slice(2,names.length).length
+
+  console.log( `${names[0]}, ${names[1]} and ${moreLikes} others like this`)
+
+  }else if(names.length === 0){
+
+    console.log( `no one likes this`)
+  }else{
+
+  console.log( `${names[0]}, ${names[1]} and ${names[3]} like this`)
+  }
 }
 
 
