@@ -25,7 +25,10 @@ function likes(names) {
     console.log( `no one likes this`)
   }else{
 
-  console.log( `${names[0]}, ${names[1]} and ${names[3]} like this`)
+        console.log( `${names[0]}, ${names[1]} and ${names[2]} like this`)
+
+    
+//  
   }
 }
 
