@@ -24,7 +24,22 @@ The middle character(s) of the word represented as a string.
 */
 
 function getMiddle(s) {
-  //Code goes here!
+
+  //check length of the string to determine if the middle is 1 or 2 letters
+
+   if (s.length%2 != 0){
+
+      // if lenght is even attract the 2 middle letters
+    
+
+
+   }else{
+
+      // otherwise the lenght is odd so just extract the middle lette
+
+
+
+   }
 }
 
 getMiddle("test"); //,"es");
