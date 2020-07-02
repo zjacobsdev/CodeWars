@@ -10,6 +10,14 @@ number([]) // => []
 number(["a", "b", "c"]) // => ["1: a", "2: b", "3: c"] */
 
 var number = function (array) {
+
+  newArr = []
+
+  for (i=0; i<= array.length; i++){
+
+    newArr.push(`${i+1}: ${array[i]}`)
+
+  }
   //your awesome code here
 };
 
