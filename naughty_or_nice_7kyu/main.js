@@ -29,9 +29,38 @@ returns [ 'xDranik' ]
 */
 
 function getNiceNames(people) {
-  //TODO
+
+  let niceNames = []
+
+  people.forEach( person => {
+    if(person.wasNice){
+
+      niceNames.push(person.name)
+
+    }
+});
+
+   
+  return niceNames
 }
 
 function getNaughtyNames(people) {
-  //TODO
+
+  let naughtyNames = []
+  people.forEach( person => {
+  if(!person.wasNice){
+    naughtyNames.push(person.name)
+  }
+});
+   
+  return naughtyNames
 }
+
+
+getNiceNames([{ name: 'Warrior reading this kata', wasNice: true }, 
+              { name: 'xDranik', wasNice: false }, 
+              { name: 'Santa', wasNice: true }])
+
+getNaughtyNames([{ name: 'Warrior reading this kata', wasNice: true }, 
+                 { name: 'Dranik', wasNice: false }, 
+                 { name: 'Santa', wasNice: true }])
