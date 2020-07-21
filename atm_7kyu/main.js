@@ -11,24 +11,16 @@ Good Luck!!!
 */
 
 function solve(n) {
-    //let minNotesFound = true
 
-    if(n % 10 != 0){
-        console.log(-1)
-        return -1
-    }
+    let listOfNomValues = [ 10, 20 ,50, 100,200,500]
+    let countOfNotes = 0
 
-
-   let listOfNomValues = [ 10, 20 ,50, 100,200,500]
-   let countOfNotes = 0
-
+    if(n % 10 != 0){ return -1 }
 
     for(let i = listOfNomValues.length - 1; i >= 0; i--){
 
-
-        console.log(`%c ${listOfNomValues[i]}`, `color: orange;`)
-
         if(n < listOfNomValues[i]){ continue;}
+
 
         if (n % listOfNomValues[i] === 0){ 
             
@@ -39,27 +31,18 @@ function solve(n) {
 
         let currentCountOfNotes = Math.floor(n / listOfNomValues[i]) 
 
-        countOfNotes = countOfNotes + currentCountOfNotes 
-
-        console.log(`%c ${currentCountOfNotes}`, 'color: green;')
-       // console.log(countOfNotes)
-        
+        countOfNotes = countOfNotes + currentCountOfNotes
 
        let amtTaken = currentCountOfNotes * listOfNomValues[i] 
 
-       console.log(amtTaken)
 
        let amtLeft = n - amtTaken 
-
-       console.log(`%c ${amtLeft}`,`color:red;`)
        n = amtLeft 
-        console.log(n)
-        console.log(`%c ${countOfNotes}`, `color: yellow`)
     }
 
-    console.log(`%c ${countOfNotes}`, `color: yellow`)
+    console.log( countOfNotes)
+    return countOfNotes
 
-    //console.log(countOfNotes)
 
     
   }
@@ -75,14 +58,14 @@ function solve(n) {
 
 
 
-
+solve(60)
 
 
 //  solve(770)//, 4, "Wrong result for 770");
 //   solve(550)//, 2, "Wrong result for 550");
 //   solve(10)//, 1, "Wrong result for 10");
    
- solve(1250)//, 4, "Wrong result for 1250
+//  solve(1250)//, 4, "Wrong result for 1250
 
 //  solve(125)//, -1, "Wrong result for 125");
  // solve(666)//, -1, "Wrong result for 666");
