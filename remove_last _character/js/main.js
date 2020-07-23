@@ -3,8 +3,15 @@ function removeChar(str){
   l =str.length
   s = str.charAt(l)
 
-  console.log(firstLetter)
-  console.log(s)
+  deleteFirstLetter= str.replace()
+  deletedLastLetter = str.replace()
+
+
+
+  // console.log(firstLetter)
+  // console.log(s)
+
+  console.log(str)
   
  
  };
